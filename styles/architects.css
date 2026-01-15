@@ -134,7 +134,9 @@ nav{
 #features{
     margin-top: 130px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap:146px;
+    
 }
 .feature-container{
     max-width: 586px;
@@ -153,14 +155,27 @@ nav{
     font-weight: 600;
     color:#131313;
 }
-
 .feature-img-box{
-    position: relative;
+    margin:0 auto
 }
 .feature-img-box img{
+        max-width: 708px;
         width: 100%;
+        margin:0 auto;
     }
-
+    .feature-img-box button{
+      padding: 42px 45px;
+      margin-left: -92px;
+      margin-top: -77px;
+    }
+#years10{
+    font-size: 64px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+#experience{
+    display: block;
+}
 
 
 /* some facts section */
@@ -289,8 +304,8 @@ nav{
         text-align: center;
     }
 
+    #features,
     #teams{
-         align-items: stretch;
         gap:40px;
     }
   
@@ -298,7 +313,20 @@ nav{
         text-align: center;
     }
     /* features section */
-    
+    .feature-container .title{
+        font-size: 35px;
+        text-align: center;
+    }
+    .feature-img-box{
+        text-align: center;
+    }
+    .feature-img-box button {
+        margin: 10px auto;
+        padding: 16px 20px;   
+    }
+#years10{
+    font-size: 30px;
+}
 
     /* some-facts */
     .some-fact-container{
@@ -344,7 +372,7 @@ nav{
     }
      nav,
     #teams,
-    #features{
+    #features,#some-facts{
         align-items: center;
         gap:40px;
     }
@@ -366,12 +394,26 @@ nav{
     .feature-container h1{
         text-align: center;
     }
+    .feature-img-box{
+        text-align: center;
+    }
+     .feature-img-box button{
+        margin: 10px auto;
+    }
+ 
+
+    .some-fact-container{
+        text-align: center;
+        margin:0 auto;
+    }
     .some-cards-box{
         grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+       
         
     }
     .some-card{
-        max-width:300px;
+     width: 241px;
     }
     .sponsors-companies{
         grid-template-columns: repeat(2,1fr);
